@@ -1,0 +1,14 @@
+<%- include("header"); -%>
+    <h1 class="heading">Projects:</h1>
+    <br>
+    <ul class="list-group">
+    <%projectList.forEach(function(project){ %>
+      <a href="/<%=project.title%>">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <%= project.title%>
+          <span class="badge badge-pill"><%=project.rating%></span>
+        </li>
+      </a>
+    <%});%>
+    </ul>
+<%- include("footer"); -%>
