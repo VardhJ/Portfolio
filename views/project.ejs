@@ -1,4 +1,12 @@
 <%- include("header"); -%>
+  <div class="project">
+    <h1><%= project.title%></h1>
+    <p><strong><u>Description:</u></strong> <%= project.description%></p>
+    <br />
+    <p><strong><u>Link:</u></strong> <a href="<%= project.link%>"><%= project.link%></a></p>
+    <br />
+    <p><strong><u>Rating:</u></strong> <%= project.rating%> out of 10</p>
 
+  </div>
 
 <%- include("footer"); -%>

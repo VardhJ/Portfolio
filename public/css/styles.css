@@ -25,8 +25,29 @@
     font-weight: bolder;
   }
 
+ul li {
+  font-size: 20px;
+}
+
 .badge{
   background-color: #1abc9c;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.project{
+  background-color: #1abc9c;
+  padding: 20px;
+  font-family: 'Dongle', sans-serif;
+}
+.project h1{
+  font-size: 60px;
+}
+.project p{
+  font-size: 35px;
+}
+.project a{
+  color: #11468F;
 }
 
 .footer-padding {

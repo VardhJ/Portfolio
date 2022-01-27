@@ -52,13 +52,8 @@ app.post("/compose", function(req, res){
 });
 
 app.get("/:projectName", function(req, res){
-  Project.find({title: req.params.projectName}, function(err, result){
-    if(!err){
+  Project.findOne({title: req.params.projectName}, function(err, result){
       res.render("project",{project: result});
-    }
-    else{
-      console.log("Could not find the project");
-    }
   });
 });
 
